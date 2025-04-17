@@ -23,6 +23,7 @@ struct MainListView: View {
                         
                         Text(mission.formattedLaunchDate)
                             .foregroundStyle(.gray)
+                            .accessibilityLabel(mission.formattedLaunchDate == "N/A" ? "Not launched" : "Launched on \(mission.formattedLaunchDate)")
                     }
                     .frame(maxWidth:.infinity, alignment:.topLeading)
                 })

@@ -11,6 +11,11 @@
 		03DDD5082C8B7DDD0000B206 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDD5072C8B7DDD0000B206 /* ContentView.swift */; };
 		03DDD50A2C8B7DDE0000B206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DDD5092C8B7DDE0000B206 /* Assets.xcassets */; };
 		03DDD50D2C8B7DDE0000B206 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DDD50C2C8B7DDE0000B206 /* Preview Assets.xcassets */; };
+		03DDD5162C90D84B0000B206 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDD5152C90D84B0000B206 /* Book.swift */; };
+		03DDD5182C90D9450000B206 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDD5172C90D9450000B206 /* AddBookView.swift */; };
+		03DDD51A2C90E2FF0000B206 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDD5192C90E2FF0000B206 /* RatingView.swift */; };
+		03DDD51C2C90E6400000B206 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDD51B2C90E6400000B206 /* EmojiRatingView.swift */; };
+		03DDD51E2C9344820000B206 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDD51D2C9344820000B206 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		03DDD5072C8B7DDD0000B206 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		03DDD5092C8B7DDE0000B206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03DDD50C2C8B7DDE0000B206 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03DDD5152C90D84B0000B206 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		03DDD5172C90D9450000B206 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		03DDD5192C90E2FF0000B206 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		03DDD51B2C90E6400000B206 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		03DDD51D2C9344820000B206 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,13 @@
 			isa = PBXGroup;
 			children = (
 				03DDD5052C8B7DDD0000B206 /* BookwormApp.swift */,
+				03DDD5172C90D9450000B206 /* AddBookView.swift */,
+				03DDD5192C90E2FF0000B206 /* RatingView.swift */,
 				03DDD5072C8B7DDD0000B206 /* ContentView.swift */,
+				03DDD51B2C90E6400000B206 /* EmojiRatingView.swift */,
+				03DDD5152C90D84B0000B206 /* Book.swift */,
 				03DDD5092C8B7DDE0000B206 /* Assets.xcassets */,
+				03DDD51D2C9344820000B206 /* DetailView.swift */,
 				03DDD50B2C8B7DDE0000B206 /* Preview Content */,
 			);
 			path = Bookworm;
@@ -139,6 +154,11 @@
 			files = (
 				03DDD5082C8B7DDD0000B206 /* ContentView.swift in Sources */,
 				03DDD5062C8B7DDD0000B206 /* BookwormApp.swift in Sources */,
+				03DDD5162C90D84B0000B206 /* Book.swift in Sources */,
+				03DDD51E2C9344820000B206 /* DetailView.swift in Sources */,
+				03DDD51A2C90E2FF0000B206 /* RatingView.swift in Sources */,
+				03DDD51C2C90E6400000B206 /* EmojiRatingView.swift in Sources */,
+				03DDD5182C90D9450000B206 /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +292,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bookworm/Preview Content\"";
+				DEVELOPMENT_TEAM = G99FSYSCZ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bookworm/Preview Content\"";
+				DEVELOPMENT_TEAM = G99FSYSCZ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

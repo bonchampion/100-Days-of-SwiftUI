@@ -38,6 +38,7 @@ struct ContentView: View {
                 } label: {
                     Image(systemName: showGrid ? "list.star" : "square.grid.2x2.fill")
                 }
+                .accessibilityLabel( showGrid ? "Toggle to list view" : "Toggle to grid view")
             }
         }
         

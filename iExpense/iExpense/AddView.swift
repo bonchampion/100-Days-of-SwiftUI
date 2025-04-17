@@ -5,25 +5,27 @@
 //  Created by Bon Champion on 7/12/24.
 //
 
+import SwiftData
 import SwiftUI
 
 struct AddView: View {
+    @Environment(\.modelContext) var modelContext
     @Environment(\.dismiss) var dismiss
     
     @State private var name = "New expense"
     @State private var type = "Personal"
     @State private var amount = 0.0
     
-    var expenses: Expenses
+    @Query var expenses: [Expense]
     
-    let types = ["Business", "Personal"]
+    static let types = ["Business", "Personal"]
     
     var body: some View {
         Form {
 //                 TextField("Name", text: $name) removed in favor of binded nav title
             
             Picker("Type", selection: $type) {
-                ForEach(types, id: \.self) {
+                ForEach(Self.types, id: \.self) {
                     Text($0)
                 }
             }
@@ -36,8 +38,8 @@ struct AddView: View {
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {
                 Button("Save") {
-                    let item = ExpenseItem(name: name, type: type, amount: amount)
-                    expenses.items.append(item)
+                    let item = Expense(name: name, type: type, amount: amount)
+                    modelContext.insert(item)
                     dismiss()
                 }
             }
@@ -52,5 +54,6 @@ struct AddView: View {
 }
 
 #Preview {
-    AddView(expenses: Expenses())
+    AddView()
+        .modelContainer(for: Expense.self)
 }

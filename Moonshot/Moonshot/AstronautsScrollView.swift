@@ -34,6 +34,7 @@ struct AstronautsScrollView: View {
                                     .foregroundStyle(.white)
                                     .font(.headline)
                                     .monospaced()
+                                    .accessibilityLabel(crewMember.astronaut.name.replacingOccurrences(of: ".", with: " "))
                                 Text(crewMember.role)
                                     .foregroundStyle(.white)
                                     .opacity(0.75)

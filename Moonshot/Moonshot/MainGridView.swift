@@ -36,6 +36,7 @@ struct MainGridView: View {
                                 Text(mission.formattedLaunchDate)
                                     .font(.caption)
                                     .foregroundStyle(.gray)
+                                    .accessibilityLabel(mission.formattedLaunchDate == "N/A" ? "Not launched" : "Launched on \(mission.formattedLaunchDate)")
                                 
                             }
                             .padding(.vertical)

@@ -53,6 +53,7 @@ struct ContentView: View {
                     Text("\(score)")
                         .fontWeight(.bold)
                 }
+                .accessibilityElement(children: .combine)
                 
                 Section {
                     ForEach(usedWords, id: \.self) { word in
@@ -60,6 +61,8 @@ struct ContentView: View {
                             Image(systemName: "\(word.count).circle")
                             Text(word)
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel("\(word), \(word.count) letters")
                     }
                 }
             }
