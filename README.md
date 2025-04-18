@@ -12,6 +12,7 @@ My journey through Hacking With Swift's 100 Days of SwiftUI course. This reposit
 - **Cupcake Corner**: An order management system for a cupcake shop
 - **Friend Face**: A social networking app that displays user information
 - **Guess The Flag**: A flag guessing game
+- **Hot Prospects**: An app for connecting with people at conferences using QR codes
 - **Habit Tracker**: A habit tracking application
 - **Instafilter**: A photo filter app using Core Image
 - **iExpense**: An expense tracker app using SwiftData for persistent storage
